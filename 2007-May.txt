@@ -1,0 +1,33 @@
+From appletalk at mail.berlios.de  Tue May 15 12:59:09 2007
+From: appletalk at mail.berlios.de (appletalk at BerliOS)
+Date: Tue, 15 May 2007 12:59:09 +0200
+Subject: [Macvdr-svn] r81 - trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1
+Message-ID: <200705151059.l4FAx93Q026974@sheep.berlios.de>
+
+Author: appletalk
+Date: 2007-05-15 12:59:08 +0200 (Tue, 15 May 2007)
+New Revision: 81
+
+Modified:
+   trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1/transponders.c
+Log:
+Remove the debug setting to test the channel scan plugin.
+
+
+Modified: trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1/transponders.c
+===================================================================
+--- trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1/transponders.c	2007-04-26 14:06:13 UTC (rev 80)
++++ trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1/transponders.c	2007-05-15 10:59:08 UTC (rev 81)
+@@ -422,8 +422,7 @@
+    
+    position_ = "Terrestrial";
+ 
+-//   for (channel=5; channel <= 69; channel++) 
+-   for (channel=20; channel <= 23; channel++) // only for tests
++   for (channel=5; channel <= 69; channel++) 
+    {
+        f = channel2Frequency(0,channel,bandwidth);
+        if (f) {
+
+
+

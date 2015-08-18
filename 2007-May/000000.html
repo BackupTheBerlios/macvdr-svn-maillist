@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Macvdr-svn] r81 - trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/macvdr-svn/2007-May/index.html" >
+   <LINK REL="made" HREF="mailto:macvdr-svn%40lists.berlios.de?Subject=Re%3A%20%5BMacvdr-svn%5D%20r81%20-%20trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1&In-Reply-To=%3C200705151059.l4FAx93Q026974%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Macvdr-svn] r81 - trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1</H1>
+    <B>appletalk at BerliOS</B> 
+    <A HREF="mailto:macvdr-svn%40lists.berlios.de?Subject=Re%3A%20%5BMacvdr-svn%5D%20r81%20-%20trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1&In-Reply-To=%3C200705151059.l4FAx93Q026974%40sheep.berlios.de%3E"
+       TITLE="[Macvdr-svn] r81 - trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1">appletalk at mail.berlios.de
+       </A><BR>
+    <I>Tue May 15 12:59:09 CEST 2007</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: appletalk
+Date: 2007-05-15 12:59:08 +0200 (Tue, 15 May 2007)
+New Revision: 81
+
+Modified:
+   trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1/transponders.c
+Log:
+Remove the debug setting to test the channel scan plugin.
+
+
+Modified: trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1/transponders.c
+===================================================================
+--- trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1/transponders.c	2007-04-26 14:06:13 UTC (rev 80)
++++ trunk/vdr-1.4.1/PLUGINS/src/reelchannelscan-0.4.1/transponders.c	2007-05-15 10:59:08 UTC (rev 81)
+@@ -422,8 +422,7 @@
+    
+    position_ = &quot;Terrestrial&quot;;
+ 
+-//   for (channel=5; channel &lt;= 69; channel++) 
+-   for (channel=20; channel &lt;= 23; channel++) // only for tests
++   for (channel=5; channel &lt;= 69; channel++) 
+    {
+        f = channel2Frequency(0,channel,bandwidth);
+        if (f) {
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/macvdr-svn">More information about the Macvdr-svn
+mailing list</a><br>
+</body></html>
